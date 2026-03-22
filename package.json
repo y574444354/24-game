@@ -1,0 +1,14 @@
+{
+  "name": "24-game",
+  "version": "1.0.0",
+  "description": "24点游戏 - 微信/抖音双平台小游戏",
+  "scripts": {
+    "build": "npx esbuild game.js --bundle --outfile=dev/bundle.js --platform=browser",
+    "dev": "node dev/server.js",
+    "generate": "node scripts/generate_levels.js",
+    "verify": "node scripts/verify_levels.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.27.4"
+  }
+}
